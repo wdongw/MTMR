@@ -2,8 +2,10 @@ set theList to paragraphs of text of (do shell script "pmset -g batt")
 set percent to word 6 of theList's item 2
 set charge to word 7 of theList's item 2
 
-if (charge = "charging"  or charge = "charged") then
+if (charge = "charging") then
 	set iconC to "⚡️"
+else if (charge = "charged") then
+	set iconC to "🔌"
 else
 	set iconC to ""
 end if
