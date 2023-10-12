@@ -119,6 +119,9 @@ class BatteryInfo: NSObject {
             if current < 100 {
                 title += "⚡️"
             }
+            else {
+                title += "🔌"
+            }
             timeRemaining = getFormattedTime(time: timeToFull)
         } else {
             timeRemaining = getFormattedTime(time: timeToEmpty)
