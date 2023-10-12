@@ -4,7 +4,9 @@ set charge to word 7 of theList's item 2
 
 if (charge = "charging") then
 	set iconC to "⚡️"
-else if (charge = "charged") then
+end if
+
+if (charge = "charged") then
 	set iconC to "🔌"
 else
 	set iconC to ""
